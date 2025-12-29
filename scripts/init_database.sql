@@ -19,21 +19,13 @@ If you are using a GUI tool like [pgAdmin](www.pgadmin.org), you can create the 
 2.  **Right-click** on the "Databases" node in the object browser tree.
 3.  Select **Create** > **Database...**
 4.  In the "Create - Database" dialog, enter the following details:
-    *   **Database:** `my_project_name_db` (or whatever your project requires)
-    *   **Owner:** `your_username`
-5.  Click **Save** to create the database.
-*/
-
--- Create 'DataWarehouse' database 
-1.  **Connect** to your PostgreSQL server instance within pgAdmin.
-2.  **Right-click** on the "Databases" node in the object browser tree.
-3.  Select **Create** > **Database...**
-4.  In the "Create - Database" dialog, enter the following details:
     *   **Database:** `DataWarehouse`
     *   **Owner:** `postgres`
 5.  Click **Save** to create the database.
+*/
 
-  -- Create Schemas
+
+-- Create Schemas
 CREATE schema bronze;
 CREATE SCHEMA silver;
 CREATE SCHEMA gold;
